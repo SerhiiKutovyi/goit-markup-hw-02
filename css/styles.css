@@ -1,0 +1,49 @@
+body {
+    color:#757575;
+    background-color: #FFFFFF;
+}
+
+.list {
+    list-style: none;
+}
+
+.logo-first {
+    color: rgba(33, 150, 243, 1);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    text-decoration: none
+}
+.logo-second {
+    color: rgba(0, 0, 0, 1);
+   
+}
+
+/* Site nav */
+
+.site-nav,.link {
+    color: rgba(33, 33, 33, 1)
+}
+
+.site-nav,
+.link:hover,.site-nav,
+.link:focus {
+    color: rgba(33, 150, 243, 1);
+}
+
+.auth-nav,
+.link-auth {
+    color: rgba(117, 117, 117, 1)
+}
+
+.auth-nav,.link-auth:hover,.auth-nav,.link-auth:focus {
+    color: rgba(33, 150, 243, 1);
+}
+
+/* section */
+
+.section-title,
+.section-subtitle {
+    color: rgba(33, 33, 33, 1);
+}
