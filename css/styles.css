@@ -1,3 +1,10 @@
+:root {
+    --primary-text-color:rgba(117, 117, 117, 1);
+    --titel-text-color:rgba(33, 33, 33, 1);
+    --accent-color:rgba(33, 150, 243, 1);
+    --primary-bg-color: rgba(255, 255, 255, 1);
+    }
+
 body {
     color:#757575;
     background-color: #FFFFFF;
@@ -8,7 +15,7 @@ body {
 }
 
 .logo-first {
-    color: rgba(33, 150, 243, 1);
+    color: var(--accent-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 31px;
@@ -23,27 +30,52 @@ body {
 /* Site nav */
 
 .site-nav,.link {
-    color: rgba(33, 33, 33, 1)
+    color: var(--titel-text-color);
 }
 
 .site-nav,
 .link:hover,.site-nav,
 .link:focus {
-    color: rgba(33, 150, 243, 1);
+    color: var(--accent-color);
+}
+
+.site-nav,.current {
+    color: var(--accent-color);
 }
 
 .auth-nav,
 .link-auth {
-    color: rgba(117, 117, 117, 1)
+    color: var(--primary-text-color)
 }
 
-.auth-nav,.link-auth:hover,.auth-nav,.link-auth:focus {
-    color: rgba(33, 150, 243, 1);
+.auth-nav,.link-auth:hover,
+.auth-nav,.link-auth:focus {
+    color: var(--accent-color);
+}
+
+/* Section hero */
+
+.hero-title {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(47, 48, 58, 1);
+    width: 1600px;
 }
 
 /* section */
 
-.section-title,
-.section-subtitle {
-    color: rgba(33, 33, 33, 1);
+.section-title {
+    color: var(--titel-text-color);
+}
+
+/*Exemples*/
+
+.work-list {
+}
+
+/*Button*/
+
+.button {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    border: none;
 }
