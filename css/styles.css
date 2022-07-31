@@ -1,17 +1,42 @@
 :root {
     --primary-text-color:rgba(117, 117, 117, 1);
-    --titel-text-color:rgba(33, 33, 33, 1);
+    --title-text-color:rgba(33, 33, 33, 1);
     --accent-color:rgba(33, 150, 243, 1);
     --primary-bg-color: rgba(255, 255, 255, 1);
     }
 
-body {
-    color:#757575;
-    background-color: #FFFFFF;
+/*Button*/
+
+.button {
+    color: var(--primary-bg-color);
+    background-color: var(--accent-color);
+    border: none;
+}
+
+.btn {
+    color: var(--title-text-color);
+    background-color: rgba(245, 244, 250, 1);
 }
 
 .list {
     list-style: none;
+}
+
+/* Тело страницы */
+
+body {
+    color:var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+}
+
+.section-title {
+    color: var(--title-text-color);
+}
+
+/* Шапка */
+
+.site-nav,.link {
+    color: var(--title-text-color);
 }
 
 .logo-first {
@@ -22,15 +47,9 @@ body {
     letter-spacing: 0.03em;
     text-decoration: none
 }
+
 .logo-second {
     color: rgba(0, 0, 0, 1);
-   
-}
-
-/* Site nav */
-
-.site-nav,.link {
-    color: var(--titel-text-color);
 }
 
 .site-nav,
@@ -53,7 +72,7 @@ body {
     color: var(--accent-color);
 }
 
-/* Section hero */
+/* Секция герой */
 
 .hero-title {
     color: rgba(255, 255, 255, 1);
@@ -61,21 +80,53 @@ body {
     width: 1600px;
 }
 
-/* section */
+/* Секция особенности */
 
-.section-title {
-    color: var(--titel-text-color);
+.feature-list {
+
 }
 
-/*Exemples*/
+/*Примеры работ*/
 
 .work-list {
+
 }
 
-/*Button*/
+/* Наша команда */
 
-.button {
+.section-team {
+    
+}
+
+/* Подвал */
+
+.footer {
+    background-color: rgba(47, 48, 58, 1);
+}
+
+.logo-sec,.address-maps {
     color: var(--primary-bg-color);
-    background-color: var(--accent-color);
-    border: none;
+}
+
+.address-maps:hover,
+.address-maps:focus {
+    color: var(--accent-color);
+}
+
+.address-nav {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.address-nav:hover,
+.address-nav:focus {
+    color: var(--accent-color);
+}
+
+ /* PORTFOLIO.CSS */
+
+ .pic {
+    width: 370px;
+    height: 294px;
+    left: 615px;
+    top: 696px;
 }
